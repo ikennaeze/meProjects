@@ -7,7 +7,7 @@ const {registerUser, loginUser, getUserProfile} = require('../controllers/authCo
 router.use(
     cors({
         credentials: true,
-        origin: ["http://localhost:5173", "https://mern-authentication-system-lac.vercel.app/"]
+        origin: ["http://localhost:5173", "https://mern-authentication-system-lac.vercel.app"]
     })
 )
 
