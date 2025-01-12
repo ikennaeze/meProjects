@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/Navbar'
 import UserProfile from './pages/UserProfile/UserProfile'
 import { UserContextProvider } from '../context/userContext'
 
-axios.defaults.baseURL = "http://localhost:8000"
+axios.defaults.baseURL = "https://mern-auth-backend-kmge.onrender.com"
 axios.defaults.withCredentials = true
 
 function App() {
