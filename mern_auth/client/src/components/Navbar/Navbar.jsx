@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../../../context/userContext'
 
 const Navbar = () => {
+  const {user} = useContext(UserContext)
   return (
     <>
      <nav className="bg-[#5c8baf]">
@@ -11,6 +13,7 @@ const Navbar = () => {
                 <Link to="/" className="hover:underline hover:text-[#97bad5] duration-300">HOME</Link>
                 <Link to="/register" className="hover:underline hover:text-[#97bad5] duration-300">REGISTER</Link>
                 <Link to="/login" className="hover:underline hover:text-[#97bad5] duration-300">LOGIN</Link>
+                {user && <Link to="/profile" className="hover:underline hover:text-[#97bad5] duration-300">PROFILE</Link>}
             </div>
         </div>
      </nav>
