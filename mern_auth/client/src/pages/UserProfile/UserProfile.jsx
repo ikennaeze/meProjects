@@ -11,8 +11,8 @@ const UserProfile = () => {
 
   return (
     <>
-        <h1 className="font-['poppins'] text-center text-[24pt] text-[#31668e] font-bold mt-20 mb-5 pl-[1%] pr-[1%]">Thanks for logging in {!user ? "" : user.username}. Welcome to your profile.</h1>
-        <p className="font-['poppins'] text-center text-[24pt] text-[#31668e] font-normal mt-10 mb-5 pl-[1%] pr-[1%]">...It's a work in progress but bear with me here 😭</p>
+        <h1 className="font-['poppins'] text-center text-[24pt] text-[#31668e] font-bold mt-20 mb-5 pl-[1%] pr-[1%]">Thanks for logging in {user?.username}. Welcome to your profile.</h1>
+        {/* <p className="font-['poppins'] text-center text-[24pt] text-[#31668e] font-normal mt-10 mb-5 pl-[1%] pr-[1%]">...It's a work in progress but bear with me here 😭</p> */}
 
         {/* <div>
             <img src='who cares' />

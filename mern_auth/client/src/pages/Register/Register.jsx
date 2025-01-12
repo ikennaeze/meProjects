@@ -19,6 +19,7 @@ const Register = () => {
     const registerUser = async(e) => {
         e.preventDefault()
         const {full_name, username, email, password, confirm_password} = data
+        
         try {
             const {data} = await axios.post('/register', {
                 full_name, username, email, password, confirm_password
